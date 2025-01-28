@@ -15,7 +15,7 @@ a.info()
 b.info()
 
 
-# 2]*****Constructor Code by taking 4 arguments************************************************
+# 2]*****Constructor Code by taking 4 arguments*************************
 
 # class Employee:
 #     def __init__(self, name, age, salary, gender):
