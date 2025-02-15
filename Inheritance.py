@@ -3,6 +3,18 @@
 # (OOP) concept where a child class (derived class) inherits the attributes and methods
 # of a parent class (base class). This allows code reuse and better organization.
 
+#*****-----*****-----*****----*****-----******-----*****-----*****----***--***---***--***---****
+# Example:
+class A:       # Parent Class name as  A 
+    def displayA(self):
+        print("This is a parent class A ")
+class B(A):    # Child Class name as B 
+    def displayb(self):
+        print("This is a child class B inheriting Parent class A")
+b1=B()     # Object of class by this both class A and B is accessible by this single object we can also create multiple objects also
+b1.displayA()   # calling Parent 
+b1.displayb()   #calling child 
+
 #*-*-*-*-*-*-*-*-*Simple Example 1 Of Inheritance*-*-*-*-*-*-*-*
 # Parent class
 class Car:
