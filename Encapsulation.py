@@ -8,7 +8,28 @@
 # ✔ Restricts direct access to variables.
 # ✔ Prevents accidental modification of important data.
 # ✔ Provides controlled access via getter and setter methods.
-#***********************-------------------********************-----------------**********---****---***--
+#**************----------****************-----------***********------------*****************---------**********
+##Example:
+# Defining the Student class
+class Student:
+    def __init__(self):  # Constructor method
+        self.__name = ""  # Private attribute (indicated by double underscore)
+
+    # Getter method to retrieve the value of __name
+    def getname(self):
+        return self.__name
+
+    # Setter method to update the value of __name
+    def setname(self, Work):
+        self.__name = Work  # Assigns the new value to __name
+# Creating an instance of the Student class
+obj = Student()
+obj.setname("It is a encapsulation using Getter and Setter to access private variable ") #Setting the name attribute using the setter method
+name = obj.getname()  # Retrieving the name attribute using the getter method
+print(name)
+# Output: Its a encapsulation using Getter and Setter to access private variable
+
+#***********************--------**********************------****************-------************-----***********
 ##Example 1
 class Person:
     # Constructor to initialize private attributes
