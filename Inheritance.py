@@ -55,9 +55,7 @@ t1.show_color()  # ✅ Method defined in Toyota class (Child)
 # t2.show_work()   # ✅ Inherited method from Car class (Displays the work of the car)
 # t2.show_color()  # ✅ Method from Toyota class (Displays the color of the Toyota car)
 
-
-
-#*-*-*-*-*-*-*-*-*-*-*-*-*-Example:3-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+#*-*-*-*-*-*-*-*-*-*-*-*-*-Example:3-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---****----****----******
 # class Employee:  # Parent class
 #     def __init__(self, name, id):  # Constructor to initialize name and id
 #         self.name = name  # Store name
