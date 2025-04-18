@@ -92,3 +92,24 @@ print(my_child.show_string_three())  # From Child
 # Name is : Nasiruddin And Age:30
 # Employee ID is : M123, Salary: 85000
 # Department is :IT
+
+#Example : In the above example, the Bat class is derived from two super classes: Mammal and WingedAnimal. 
+class Mammal:
+    def mammal_info(self):
+        print("Mammals can give direct birth.")
+
+class WingedAnimal:
+    def winged_animal_info(self):
+        print("Winged animals can flap.")
+
+class Bat(Mammal, WingedAnimal):
+    pass
+
+# create an object of Bat class
+b1 = Bat()
+
+b1.mammal_info()
+b1.winged_animal_info()
+#Output:
+# Mammals can give direct birth.
+# Winged animals can flap.
