@@ -3,7 +3,7 @@
 # (OOP) concept where a child class (derived class) inherits the attributes and methods
 # of a parent class (base class). This allows code reuse and better organization.
 
-#*****-----*****-----*****----*****-----******-----*****-----*****----***--***---***--***---****
+#############################################################################################################################################
 # Example:
 class A:       # Parent Class name as  A 
     def displayA(self):
@@ -13,25 +13,31 @@ class B(A):    # Child Class name as B
         print("This is a child class B inheriting Parent class A")
 b1=B()     # Object of class by this both class A and B is accessible by this single object we can also create multiple objects also
 b1.displayA()   # calling Parent 
-b1.displayb()   #calling child 
+# b1.displayb()   #calling child 
+# Output:
+# This is a parent class A 
+# This is a child class B inheriting Parent class A
 
-#*-*-*-*-*-*-*-*-*Simple Example 1 Of Inheritance*-*-*-*-*-*-*-*
-# Parent class
-class Car:
+#1]*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*Simple Example 1 Of Inheritance*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+class Car:                # Parent class
     def show_work(self):  # Method in the parent class
-        print("Cars are used for driving.")
+        print("Cars are for travelling and Riding .")
 
-# Child class inheriting from Car
-class Toyota(Car):  # Toyota is a child class of Car
-    def show_color(self):  # Method specific to Toyota
-        print("Toyota cars are mostly red.")
+# Child class Suzuki inheriting from Car
+class Suzuki(Car):  # Suzuki is a child class of Car
+    def show_color(self):  # Method specific to Suzuki
+        print("Suzuki cars are best seller in India .")
 
-# Creating an object of the child class Toyota
-t1 = Toyota()
+# Creating an object of the child class Suzuki
+t1 = Suzuki()
 t1.show_work()  # ✅ Inherited method from Car class (Parent)
-t1.show_color()  # ✅ Method defined in Toyota class (Child)
+t1.show_color()  # ✅ Method defined in Suzuki class (Child)
 
-#***********************************************Example 2 of inheritance using constructor-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+#Outtput:
+# Cars are for travelling and Riding .
+# Suzuki cars are best seller in India .
+
+#2]***************************************************Example 2 of inheritance using constructor-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 # Parent class: Car
 # class Car:
 #     def __init__(self, work):  # Constructor to initialize 'work'
@@ -55,7 +61,11 @@ t1.show_color()  # ✅ Method defined in Toyota class (Child)
 # t2.show_work()   # ✅ Inherited method from Car class (Displays the work of the car)
 # t2.show_color()  # ✅ Method from Toyota class (Displays the color of the Toyota car)
 
-#*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-Example:3 using constructor-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---****----****----******
+#Output:
+# The work of car is Driving
+# My color is Red
+
+#3]*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*Example:3 using constructor-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 # class Employee:  # Parent class
 #     def __init__(self, name, id):  # Constructor to initialize name and id
 #         self.name = name  # Store name
@@ -79,4 +89,5 @@ t1.show_color()  # ✅ Method defined in Toyota class (Child)
 # e2 = Programmer("Musa", 20, "Python")  # Initialize a programmer
 # e2.show_details()  # Call inherited method to display details
 # e2.show_language()  # Call method specific to Programmer class
+
 
