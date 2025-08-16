@@ -1,4 +1,4 @@
-#*-*-*-*-*-**************-Inheritance in Python-***********-*-*-*-*-*-*-*-*-**-**-*-*-*-*-*-*-*-
+#**************************************************(Inheritance in Python)******************************************************************
 # Inheritance in Python is an Object-Oriented Programming
 # (OOP) concept where a child class (derived class) inherits the attributes and methods
 # of a parent class (base class). This allows code reuse and better organization.
@@ -31,7 +31,7 @@ t1 = Toyota()
 t1.show_work()  # ✅ Inherited method from Car class (Parent)
 t1.show_color()  # ✅ Method defined in Toyota class (Child)
 
-#*-*-*-*-*-*-*--*-*-*Example 2 of inheritance-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+#***********************************************Example 2 of inheritance using constructor-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 # Parent class: Car
 # class Car:
 #     def __init__(self, work):  # Constructor to initialize 'work'
@@ -55,7 +55,7 @@ t1.show_color()  # ✅ Method defined in Toyota class (Child)
 # t2.show_work()   # ✅ Inherited method from Car class (Displays the work of the car)
 # t2.show_color()  # ✅ Method from Toyota class (Displays the color of the Toyota car)
 
-#*-*-*-*-*-*-*-*-*-*-*-*-*-Example:3-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---****----****----******
+#*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-Example:3 using constructor-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---****----****----******
 # class Employee:  # Parent class
 #     def __init__(self, name, id):  # Constructor to initialize name and id
 #         self.name = name  # Store name
@@ -79,3 +79,4 @@ t1.show_color()  # ✅ Method defined in Toyota class (Child)
 # e2 = Programmer("Musa", 20, "Python")  # Initialize a programmer
 # e2.show_details()  # Call inherited method to display details
 # e2.show_language()  # Call method specific to Programmer class
+
